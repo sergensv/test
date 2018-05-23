@@ -7,7 +7,7 @@ Example demonstrates working of **`xf::GaussianBlur()`** and **`xf::resize()`** 
 ![](./../Code_Structure.png)
 
 | Component | Source files |
-|
+| :--- | :--- |
 | *Kernel&nbsp;Configuration*          |**`xf_gaussian_filter_config.h`**<br/>**`xf_config_params.h`**|
 | *Host&nbsp;Application*              |**`xf_gaussian_filter_tb.cpp`**|
 | *Kernel&nbsp;Interface&nbsp;Wrapper* |**`xf_gaussian_filter_accel_aws.cpp`**|
