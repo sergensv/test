@@ -7,7 +7,7 @@ Example demonstrates using of **`xf::GaussianBlur()`** and **`xf::resize()`** fu
 ![](./../Code_Structure.png)
 
 | Component | Source files |
-|    :      |      :       |
+| :-        | :-           |
 | *Kernel&nbsp;Configuration*          |**`xf_gaussian_filter_config.h`**<br/>**`xf_config_params.h`**|
 | *Host&nbsp;Application*              |**`xf_gaussian_filter_tb.cpp`**|
 | *Kernel&nbsp;Interface&nbsp;Wrapper* |**`xf_gaussian_filter_accel_aws.cpp`**|
@@ -19,7 +19,7 @@ Example demonstrates using of **`xf::GaussianBlur()`** and **`xf::resize()`** fu
 Following constants in header files define kernel configuration
 
 | Constant | Possible values | Default Value | Description |
-|     :    |         :       |        :      |      :      |
+| :-       | :-              | :-            | :-          |
 | **`FILTER_SIZE_3`**<br/>**`FILTER_SIZE_5`**<br/>**`FILTER_SIZE_7`**|**`0, 1`**| **`1`**<br/>**`0`**<br/>**`0`**| Select window size of the Gaussian filter. One of them should be defined as 1. And only one can be defined as 1 - others should be defined as 0 |
 | **`FILTER_WIDTH`**            |-|-|The window size of the Gaussian filter. Value set automatically depending on which **`FILTER_SIZE_n`** set to 1. 
 | **`SIGMA`**                   |-|-|Standard deviation of of Gaussian Filter. Value set automatically depending on which **`FILTER_SIZE_n`** set to 1.|
@@ -54,7 +54,7 @@ For this example kernel interface wrapper also perform FPGA initialization, kern
 
 
 | Parameter&nbsp;Name |Direction|Type | Description |
-|             :       |    :    |  :  |     :       |
+| :-                  | :-      | :-  | :-          |
 | **`img_inp`** |Input  | **`xf::Mat<XF_8UC1, ROWS_INP, COLS_INP, NPC1> &`** | Input image |
 | **`img_out`** |Output | **`xf::Mat<XF_8UC1, ROWS_OUT, COLS_OUT, NPC1> &`** | Output image |
 | **`sigma`**   | Input | **`float`**                                      | Standard deviation of of Gaussian Filter |
